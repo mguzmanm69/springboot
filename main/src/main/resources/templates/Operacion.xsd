@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Operacion" xmlns:tns="http://www.example.org/Operacion" elementFormDefault="qualified">
+      
+    <xs:element name="obtenerOperacionRequest">
+    	<xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="obtenerOperacionResponse">
+    	<xs:complexType>
+            <xs:sequence>
+                <xs:element name="Id" type="xs:int"/>			
+			    <xs:element name="NumOpe" type="xs:string"/>			
+			    <xs:element name="Descripcion" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
